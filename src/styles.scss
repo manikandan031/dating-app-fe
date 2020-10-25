@@ -1,5 +1,6 @@
 @import '~normalize.css';
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap');
+@import "colors";
 /* reset */
 * , *:before, *:after{
   margin: 0;
@@ -13,8 +14,38 @@ h1 {
 
 html {
   font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
-  color: #d1d3ec;
+  color: $text-color-primary;
   text-rendering: optimizeLegibility;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.btn-primary, .btn-primary:visited{
+  background-color: $green-primary;
+  border: 1px solid $green-primary;
+  color: $text-color-primary;
+}
+
+.btn-primary:hover, .btn-primary:active {
+  background-color: $green-dark;
+  border: 1px solid $green-dark;
+  color: $text-color-primary;
+}
+
+.btn-ghost, .btn-ghost:visited {
+  border: 1px solid $green-primary;
+  color: $text-color-primary;
+  background-color: transparent;
+}
+
+.btn-ghost:hover, .btn-ghost:active {
+  background-color: transparent;
+  border: 1px solid $green-dark;
+  color: $text-color-primary;
 }
