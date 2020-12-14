@@ -1,0 +1,20 @@
+@import "../../../colors";
+.menu-list {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  li {
+    padding: 0 20px;
+    cursor: pointer;
+    a {
+      padding: 5px;
+    }
+    a:hover, a:visited {
+      border-bottom: 2px solid $green-primary;
+    }
+  }
+  li:last-child {
+    padding-right: 40px;
+  }
+}

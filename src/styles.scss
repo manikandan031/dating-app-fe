@@ -36,6 +36,7 @@ html {
   background-color: $green-dark;
   border: 1px solid $green-dark;
   color: $text-color-primary;
+  transition: background-color 0.5s, border 0.5s;
 }
 
 .btn-ghost, .btn-ghost:visited {
@@ -45,7 +46,8 @@ html {
 }
 
 .btn-ghost:hover, .btn-ghost:active {
-  background-color: transparent;
+  background-color: $green-dark;
   border: 1px solid $green-dark;
   color: $text-color-primary;
+  transition: background-color 0.5s, border 0.5s;
 }
