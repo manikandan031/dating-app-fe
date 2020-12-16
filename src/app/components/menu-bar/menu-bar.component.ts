@@ -1,15 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-menu-bar',
   templateUrl: './menu-bar.component.html',
   styleUrls: ['./menu-bar.component.scss']
 })
-export class MenuBarComponent implements OnInit {
+export class MenuBarComponent {
 
-  constructor() { }
+  @Output() menuClick: EventEmitter<boolean> = new EventEmitter<boolean>();
 
-  ngOnInit(): void {
+  onClick() {
+    this.menuClick.emit(true);
   }
 
 }

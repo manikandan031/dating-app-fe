@@ -9,12 +9,18 @@
     cursor: pointer;
     a {
       padding: 5px;
+      text-decoration: none;
     }
     a:hover, a:visited {
       border-bottom: 2px solid $green-primary;
+      color: white;
+      text-decoration: none;
     }
   }
   li:last-child {
     padding-right: 40px;
+  }
+  .active {
+
   }
 }

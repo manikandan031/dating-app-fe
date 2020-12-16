@@ -1,5 +1,5 @@
-<div class="main-content">
-  <app-menu-bar></app-menu-bar>
+<div class="main-content" *ngIf="!hideHome">
+  <app-menu-bar (menuClick)="onMenuClick()"></app-menu-bar>
   <div class="header">
     <h1>Match Maker</h1>
     <div class="tag-line">
@@ -11,3 +11,4 @@
     </div>
   </div>
 </div>
+<router-outlet></router-outlet>
