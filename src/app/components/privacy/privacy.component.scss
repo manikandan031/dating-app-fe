@@ -9,6 +9,7 @@
     }
     .phone {
       width: 30%;
+      min-width: 400px;
       img {
         width: 100%;
         height: 400px;
@@ -38,6 +39,11 @@
       }
     }
   }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
   .buttons {
     display: flex;
     div {
@@ -46,6 +52,45 @@
     img {
       width: 100%;
       height: 60px;
+    }
+  }
+}
+.customer-testimonials {
+  background-image: linear-gradient(rgb(0,0,0,0.7), rgb(0,0,0,0.7)), url("src/assets/images/hero-banner.jpg");
+  object-fit: cover;
+  height: auto;
+  .row {
+    display: flex;
+    padding: 40px 20px 20px 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    .testimony {
+      flex-basis: 350px;
+      margin-right: 40px;
+      padding: 10px;
+      position: relative;
+      p::before {
+        content: '\201C';
+        position: absolute;
+        font-size: 400%;
+        left: -20px;
+        top: -5px;
+      }
+      p {
+        line-height: 140%;
+        font-size: 90%;
+        text-align: justify;
+        padding-bottom: 10px;
+      }
+      .customer-name {
+        img {
+          border-radius: 50%;
+          height: 70px;
+          width: 70px;
+          vertical-align: middle;
+          margin-right: 10px;
+        }
+      }
     }
   }
 }
